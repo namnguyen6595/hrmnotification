@@ -15,8 +15,8 @@
     "ts-node": "^10.7.0"
   },
   "scripts": {
-    "dev": "nodemon app.ts",
-    "start": "node app.ts",
+    "dev": "nodemon app.js",
+    "start": "yarn dev",
     "build": ""
   },
   "devDependencies": {

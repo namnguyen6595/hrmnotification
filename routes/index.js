@@ -1,4 +1,4 @@
-import express, {Request, Response} from "express"
+const express = require('express')
 const router = express.Router()
 
 router.get('/home', (req, res) => {
@@ -6,7 +6,7 @@ router.get('/home', (req, res) => {
   console.log(res)
 })
 
-router.post('/hr-checkin', (req: Request, res: Response) => {
+router.post('/hr-checkin', (req, res) => {
   console.log(req)
   res.json({
     channel: "C038N334S74",
@@ -15,4 +15,4 @@ router.post('/hr-checkin', (req: Request, res: Response) => {
   
 })
 
-export default router
+module.exports = router
